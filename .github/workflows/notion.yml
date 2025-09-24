@@ -15,13 +15,13 @@ jobs:
         with:
           node-version: 18
 
-      # notion-to-md 글로벌 설치
+      # notion-to-md 설치
       - name: Install notion-to-md
-        run: npm install -g notion-to-md
+        run: npm install notion-to-md
 
       # Notion에서 글 가져오기
       - name: Fetch Notion posts
-        run: notion-to-md -k ${{ secrets.NOTION_API_KEY }} -i 2780d24dfb748022b0f9ca774059605c -o ./_posts
+        run: npx --yes notion-to-md -k ${{ secrets.NOTION_API_KEY }} -i 2780d24dfb748022b0f9ca774059605c -o ./_posts
 
       # GitHub 저장소에 반영
       - name: Commit changes
