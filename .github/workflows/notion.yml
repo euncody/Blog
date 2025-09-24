@@ -18,7 +18,7 @@ jobs:
         run: npm install notion-to-md
 
       - name: Fetch Notion posts
-        run: npx notion-to-md -k ${{ ntn_y35283260049Dc5u6qgMxwdoLIxRVzGzfI0qbISaiT7dhY }} -i <2780d24dfb748022b0f9ca774059605c> -o ./_posts
+        run: npx notion-to-md -k ${{ secrets.NOTION_API_KEY }} -i <2780d24dfb748022b0f9ca774059605c> -o ./_posts
 
       - name: Commit changes
         run: |
