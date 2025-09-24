@@ -27,6 +27,17 @@
 
 [https://plugins.jetbrains.com/plugin/7125-grep-console](https://plugins.jetbrains.com/plugin/7125-grep-console)
 
+- **컬러 세팅**
+    
+    
+    | 옵션 | 색상 |
+    | --- | --- |
+    | ERROR | #FF6188 |
+    | WARNING | #FFD866 |
+    | INFO | #78DCE8 |
+    | DEBUG | #A9DC76 |
+    | TRACE | #DFE1E5 |
+
 ---
 
 ## 4. Git Emoji Commit
